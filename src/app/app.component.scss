@@ -26,7 +26,16 @@
 
     background-color: #a020f0;
     border-radius: 20px;
-    border: none;
+    border: 4px outset #b95cf4;
     color: #fff;
+
+    &:hover {
+      background-color: #7d0dc3;
+    }
+
+    &:active {
+      background-color: #570987;
+      border: 4px inset #7d0dc3;
+    }
   }
 }
