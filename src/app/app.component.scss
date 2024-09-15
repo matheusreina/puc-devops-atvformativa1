@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .quote {
+    width: 50%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+
+  .who-said-it {
+    font-family: "Times New Roman", Times, serif;
+    font-size: x-large;
+  }
+
+  button {
+    padding: 20px;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
