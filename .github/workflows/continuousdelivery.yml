@@ -17,7 +17,7 @@ jobs:
           path: |
             **.ts
             README.md
-  deploy:
+  deploy: # Deployment
     runs-on: ubuntu-latest
     needs: deliver
     steps:
