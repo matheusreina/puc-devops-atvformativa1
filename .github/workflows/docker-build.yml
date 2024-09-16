@@ -20,7 +20,3 @@ jobs:
       # Step 3: Build the Docker image
       - name: Build Docker image
         run: docker build -t random-quotes:${{ github.sha }} .
-
-      # Step 4: Push the Docker image to Docker Hub (opcional)
-      - name: Push Docker image
-        run: docker push random-quotes:${{ github.sha }}
