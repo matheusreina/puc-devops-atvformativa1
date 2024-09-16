@@ -1,0 +1,26 @@
+name: Docker Build and Push
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 3: Build the Docker image
+      - name: Build Docker image
+        run: docker build -t random-quotes:${{ github.sha }} .
+
+      # Step 4: Push the Docker image to Docker Hub (opcional)
+      - name: Push Docker image
+        run: docker push random-quotes:${{ github.sha }}
