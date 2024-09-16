@@ -15,7 +15,7 @@ jobs:
         with:
           name: projetozipado.zip
           path: |
-            '**.ts'
+            **.ts
             README.md
   deploy:
     runs-on: ubuntu-latest
